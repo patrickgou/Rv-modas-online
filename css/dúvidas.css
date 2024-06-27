@@ -1,0 +1,75 @@
+/* Estilos para o corpo e header */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.nav .icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li {
+  margin-right: 20px;
+}
+
+.nav-list li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-list li a:hover {
+  color: #ddd;
+}
+
+/* Estilos para o conteúdo da seção */
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.title-p {
+  margin-top: 0;
+}
+
+/* Estilos para o título principal */
+h1 {
+  text-align: center;
+  margin-top: 40px;
+  color: #333;
+}

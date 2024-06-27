@@ -1,0 +1,98 @@
+/* Reset básico para remover margens e padding padrões */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Configuração de corpo */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Estilização da navegação */
+.nav {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav .icon {
+  font-size: 2rem;
+  cursor: pointer;
+  display: none; /* Mostrar somente em telas pequenas */
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
+.nav-list li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: background 0.3s;
+}
+
+.nav-list li a:hover {
+  background-color: #575757;
+  border-radius: 5px;
+}
+
+/* Estilização principal */
+main {
+  padding: 2rem;
+  text-align: center;
+}
+
+main h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+  .nav .icon {
+      display: block;
+  }
+
+  .nav-list {
+      display: none;
+      flex-direction: column;
+  }
+
+  .nav-list.active {
+      display: flex;
+  }
+
+  .nav-list li {
+      text-align: center;
+  }
+
+  main h1 {
+      font-size: 2rem;
+  }
+
+  .container p {
+      font-size: 1rem;
+  }
+}
